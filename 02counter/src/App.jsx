@@ -1,4 +1,4 @@
-import { useState } from 'react'
+ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,7 +7,10 @@ function App() {
   let [counter,setCounter]= useState(15);
   //let counter = 15;
   const addValue = () =>{
-    setCounter(counter + 1)
+    setCounter(prev => prev + 1)
+    setCounter(prev => prev + 1)
+    setCounter(prev => prev + 1)
+    setCounter(prev => prev + 1)
   }
   const removeValue = () => {
     setCounter(counter - 1) 
