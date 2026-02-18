@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">                                           //translate jsx into JavaScript
+
+       const button = <button>hello</button>  //example of JSX.
+      const container = document.querySelector('.js-container');
+
+
+      //multiple elements in website
+      const div = (
+        <div>
+          <button>hello</button> 
+          <p>This is Abhay's React setUp {2+2}</p>
+        </div>
+      )
+      //ReactDOM.createRoot(container).render(button);  //SetUp react and only include one element in a website which is not a good pratice.
+      ReactDOM.createRoot(container).render(div);
+    </script>
+  </body>
+</html>
+
+<!-- 
+What is Babel?
+Babel is a JavaScript Compiler that translate other language into JavaScript.
+
+Why do we need babel?
+when using react, we don't use normal JavaScript. We use an enhanced verison of javaScript.We use enhanced version of JavaScript called jsx
+
+jsx = javascript XML is same as JavaScript,but we can write HTML directly in our JavaScript code.
+
+Problem With JSX ?
+our web browser doesn't understand JSX so we neeed to translate JSX into JavaScript. To do that we use babble library.
+-->
